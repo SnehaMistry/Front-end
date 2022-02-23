@@ -1,0 +1,20 @@
+// header component styles are here
+
+.header-wrapper{
+    // height: $header-height;
+    align-items: center;
+    height: 100px;
+
+    & .header-icon{
+        @include icon;
+        & i{
+            box-shadow: 8px -7px #438ffe69;
+        }
+    }
+
+    & .option-icon{
+        @include icon;
+        color: $sidebar-icon-color;
+    }
+    
+}

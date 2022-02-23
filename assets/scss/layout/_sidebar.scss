@@ -1,0 +1,6 @@
+.sidebar{
+    & .nav-link{
+        @include icon;
+        color: $sidebar-icon-color;
+}   
+}
