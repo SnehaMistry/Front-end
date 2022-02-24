@@ -1,6 +1,42 @@
+#toggle{
+    display: none;
+}
 .sidebar{
+    padding: $sidebar-padding;
+    position: relative;
+    & .link-wrapper
+    {
+        
+        margin: 1.7rem 0;
+    }
+    & .top-link {
+        margin-top: 0;
+    }
     & .nav-link{
         @include icon;
         color: $sidebar-icon-color;
+    }
+    & .icon-forward{
+        position: absolute;
+        padding: 0;
+        top: 0;
+        left:4.7rem;
+    }
+   
 }   
+
+#toggle:checked +.sidebar{
+    transform: translateX(-110px);
+    padding: 0;
+    transition: all 1s ease-in-out;
+    width: 0;
+
+    & .icon-forward{
+        position: absolute;
+        transform: translateX(110px);
+        left: 0;
+    }
+}
+#toggle:not(:checked) +.sidebar{
+    transition: all 1s ease-in-out;
 }

@@ -1,0 +1,30 @@
+// Function styles goes here
+
+@each $key,
+$color in $icon-color {
+    .#{$key}-color {
+        color: $color;
+    }
+    .card-#{$key}{
+        .card-icon-bg{
+            background-color: lighten($color, 30%);
+        }
+        .icon{
+            color: $color;
+        }
+        &.inner-card 
+        {   
+            &:hover{
+                background-color: $color;
+                color: $bg-primary;
+                transition: all 1s ease-in;
+                .card-icon-bg{
+                    background-color: lighten($color, 8%);
+                }
+                .icon{
+                    color: $bg-primary;
+                }
+            }
+        }
+    }
+}

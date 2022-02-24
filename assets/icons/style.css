@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kdpr1v');
-  src:  url('fonts/icomoon.eot?kdpr1v#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kdpr1v') format('truetype'),
-    url('fonts/icomoon.woff?kdpr1v') format('woff'),
-    url('fonts/icomoon.svg?kdpr1v#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?8l4u9o');
+  src:  url('fonts/icomoon.eot?8l4u9o#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8l4u9o') format('truetype'),
+    url('fonts/icomoon.woff?8l4u9o') format('woff'),
+    url('fonts/icomoon.svg?8l4u9o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,8 +25,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e90c";
+}
 .icon-timeline:before {
   content: "\e90b";
+}
+.icon-backward:before {
+  content: "\f04a";
+}
+.icon-forward:before {
+  content: "\f04e";
 }
 .icon-ant-design_message-outlined:before {
   content: "\e900";

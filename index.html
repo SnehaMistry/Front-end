@@ -14,29 +14,31 @@
     <!--Start scss dashboard structure  -->
     <div class="h-100 w-100 overflow-hidden d-flex col">
         <!-- start header component -->
-        <header class="header-wrapper w-100">
-            <div class="d-flex justify-align-center h-100">
+        <header class="header-wrapper">
+            <div class="d-flex justify-align-center p-2">
                 <!-- header Left side search and dashboard icon -->
                 <div class="header-search d-flex grow-1">
                     <div class="header-icon">
                         <span><i class="icon-stop2"></i></span>
                     </div>
                     <div class="search-wrapper">
-                        <label for="search"></label>
+                        <label for="search"><i class="icon-search"></i></label>
                         <input type="search" id="search" placeholder="Search for transacton item, etc." />
                         <button class="search-btn">Search</button>
                     </div>
                 </div>
                 <!-- header right side options -->
-                <div class="header-options d-flex">
+                <div class="header-options d-flex justify-align-center">
                     <div class="option-icon">
-                        <span><i class="icon-ant-design_message-outlined"></i></span>
+                        <span><i class="icon-ant-design_message-outlined message"></i></span>
                     </div>
-                    <div class="option-icon">
-                        <span><i class="icon-ph_bell"></i></span>
+                    <div class="option option-icon">
+                        <span><i class="icon-ph_bell bell"></i></span>
                     </div>
-                    <div>
-                        <span><i class="icon-radix-icons_dashboard"></i></span>
+                    <div class="option d-flex">
+                        <figure>
+                            <img src="assets/images/icons8-person-female-96.png" alt="user-image">
+                        </figure>
                         <label for="user-option"></label>
                         <select id="user-option"></select>
                     </div>
@@ -47,157 +49,198 @@
 
         <!-- main section start -->
         <main class="d-flex grow-1 overflow-hidden">
+            <input type="checkbox" id="toggle">
             <!-- sidebar section start -->
             <aside class="sidebar">
+                <label for="toggle" id="toggle-icon"><i class="icon-forward"></i></label>
                 <nav class="d-flex col h-100">
                     <div class="d-flex col grow-1">
-                        <div><a href="" class="nav-link text-decoration-none"><span class="icon-radix-icons_dashboard"></span></a></div>
-                        <div><a href="" class="nav-link text-decoration-none"><span class="icon-bi_cart-dash-fill"></span></a></div>
-                        <div><a href="" class="nav-link text-decoration-none"><span class="icon-fluent_notepad-20-filled"></span></a></div>
-                        <div><a href="" class="nav-link text-decoration-none"><span class="icon-ci_settings-filled"></span></a></div>
+                        <div class="top-link link-wrapper"><a href="" class="nav-link text-decoration-none"><span
+                                    class="icon-radix-icons_dashboard"></span></a></div>
+                        <div class="link-wrapper"><a href="" class="nav-link text-decoration-none"><span
+                                    class="icon-bi_cart-dash-fill"></span></a></div>
+                        <div class="link-wrapper"><a href="" class="nav-link text-decoration-none"><span
+                                    class="icon-fluent_notepad-20-filled"></span></a></div>
+                        <div class="link-wrapper"><a href="" class="nav-link text-decoration-none"><span
+                                    class="icon-ci_settings-filled"></span></a></div>
                     </div>
                     <div class="d-flex col">
-                        <a href="" class="nav-link text-decoration-none"><span class="icon-ep_warning-filled"></span></a>
-                        <a href="" class="nav-link text-decoration-none"><span class="icon-octicon_sign-out-16"></span></a>
+                        <div class="link-wrapper"><a href="" class="nav-link text-decoration-none"><span
+                                    class="icon-ep_warning-filled"></span></a></div>
+                        <div class="link-wrapper"><a href="" class="nav-link text-decoration-none"><span
+                                    class="icon-octicon_sign-out-16"></span></a></div>
                     </div>
                 </nav>
             </aside>
             <!-- end sidebar section -->
-            
+
             <!--start content section  -->
             <section class="dashboard-container grow-1 d-flex col overflow-auto">
+
                 <!-- Dashboard heading -->
                 <h1>Dashboard</h1>
-                
+
                 <!-- Start dashboard overview -->
-                <div class="card-wrapper d-flex justify-space-between">
+                <div class="card-wrapper d-flex">
                     <!-- start view card -->
-                    <div class="card d-flex col">
-                        <div class="d-flex row">
-                            <div>
-                                <span><i class="icon-bi_eye-fill"></i></span>
+                    <div class="card d-flex col card-start-child">
+                        <div class="inner-card card-views">
+                            <div class="d-flex row justify-space-between justify-align-center">
+                                <div class="d-flex card-icon justify-content-center justify-align-center card-icon-bg">
+                                    <span><i class="icon-bi_eye-fill icon"></i></span>
+                                </div>
+                                <div class="card-timeline">
+                                    <div id="rotate-eye"><span><i class="icon-timeline product-color"></i></span></div>
+                                </div>
                             </div>
-                            <div>
-                                <span><i class="icon-timeline"></i></span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Total Views</h4>
-                            <span>308.402</span>
-                            <div>
-                                <span>Start from 1 Jan 2021</span>
+                            <div class="card-content">
+                                <div>
+                                    <h4>Total Views</h4>
+                                </div>
+                                <div class="content-font"><span>308.402</span></div>
+                                <div class="content-detail">
+                                    <span>Start from 1 Jan 2021</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- end view -->
                     <!-- start Products -->
                     <div class="card d-flex col">
-                        <div class="d-flex row">
-                            <div>
-                                <span><i class="icon-fa6-solid_bag-shopping"></i></span>
+                        <div class="inner-card card-product">
+                            <div class="d-flex row justify-space-between justify-align-center">
+                                <div class="d-flex card-icon justify-content-center justify-align-center card-icon-bg">
+                                    <span><i class="icon-fa6-solid_bag-shopping icon"></i></span>
+                                </div>
+                                <div class="card-timeline">
+                                    <div id="rotate-product"><span><i class="icon-timeline graph-color"></i></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <span><i class="icon-timeline"></i></span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Total Products</h4>
-                            <span>10.820</span>
-                            <div>
-                                <span>+ Add New Product</span>
+                            <div class="card-content">
+                                <div>
+                                    <h4>Total Products</h4>
+                                </div>
+                                <div class="content-font"><span>10.820</span></div>
+                                <div class="content-detail">
+                                    <span>+ Add New Product</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- end Products -->
                     <!-- start Users -->
                     <div class="card d-flex col">
-                        <div class="d-flex row">
-                            <div>
-                                <span><i class="icon-fa6-solid_user-group"></i></span>
+                        <div class="inner-card card-user">
+                            <div class="d-flex row justify-space-between justify-align-center">
+                                <div class="d-flex card-icon justify-content-center justify-align-center card-icon-bg">
+                                    <span><i class="icon-fa6-solid_user-group icon"></i></span>
+                                </div>
+                                <div class="card-timeline">
+                                    <div id="rotate-user"><span><i class="icon-timeline product-color"></i></span></div>
+                                </div>
                             </div>
-                            <div>
-                                <span><i class="icon-timeline"></i></span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Total Users</h4>
-                            <span>8.425</span>
-                            <div>
-                                <span>New user noted every week</span>
+                            <div class="card-content">
+                                <div>
+                                    <h4>Total Users</h4>
+                                </div>
+                                <div class="content-font"><span>8.425</span></div>
+                                <div class="content-detail">
+                                    <span>New user noted every week</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- end users -->
                     <!-- start Sells -->
-                    <div class="card d-flex col">
-                        <div class="d-flex row">
-                            <div>
-                                <span><i class="icon-bi_cart-dash-fill"></i></span>
+                    <div class="card d-flex col card-end-child">
+                        <div class="inner-card card-sell">
+                            <div class="d-flex row justify-space-between justify-align-center">
+                                <div class="d-flex card-icon justify-content-center justify-align-center card-icon-bg">
+                                    <span><i class="icon-bi_cart-dash-fill icon"></i></span>
+                                </div>
+                                <div class="card-timeline">
+                                    <div id="rotate-sell"><span><i class="icon-timeline product-color"></i></span></div>
+                                </div>
                             </div>
-                            <div>
-                                <span><i class="icon-timeline"></i></span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Total sells</h4>
-                            <span>1.028.623</span>
-                            <div>
-                                <span>Start from 1 Jan 2021</span>
+                            <div class="card-content">
+                                <div>
+                                    <h4>Total sells</h4>
+                                </div>
+                                <div class="content-font"><span>1.028.623</span></div>
+                                <div class="content-detail">
+                                    <span>Start from 1 Jan 2021</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- end Sells -->
                 </div>
-                <div class="view-order d-flex">
-                    <div class="order-details grow-1">
-                        <table class="w-100">
+                <div class="view-order d-flex grow-1 h-100">
+                    <div class="order-details grow-1 h-100">
+                        <table class="w-100 table h-100">
                             <thead>
-                                <th>No</th>
-                                <th>Product Name</th>
-                                <th>Status</th>
-                                <th>Sold</th>
-                                <th>View</th>
+                                <tr>
+                                    <th>No</th>
+                                    <th></th>
+                                    <th>Product Name</th>
+                                    <th>Status</th>
+                                    <th>Sold</th>
+                                    <th>View</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 <tr class="order-record">
-                                <td>
-                                    <span>1</span>
-                                        <figure><img src="assets/images/images.jpg" alt="product-image"></figure>
-                                </td>
-                                <td>News Mobile App UI KIT...</td>
-                                <td> Active</td>
-                                <td>10</td>
-                                <td>320</td> 
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <figure><img src="assets/images/images.jpg" alt="product-image"
+                                                class="product-img"></figure>
+                                    </td>
+                                    <td>News Mobile App UI KIT...</td>
+                                    <td> Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
                                 </tr>
                                 <tr class="order-record">
                                     <td>
                                         <span>2</span>
-                                        <figure><img src="assets/images/images (1).jpg" alt="product-image"></figure>
+                                    </td>
+                                    <td>
+                                        <figure><img src="assets/images/images (1).jpg" alt="product-image"
+                                                class="product-img"></figure>
                                     </td>
                                     <td>News Mobile App UI KIT...</td>
                                     <td> Active</td>
                                     <td>10</td>
-                                    <td>320</td> 
+                                    <td>320</td>
                                 </tr>
                                 <tr class="order-record">
                                     <td>
                                         <span>3</span>
-                                        <figure><img src="assets/images/images.jpg" alt="product-image"></figure>
+                                    </td>
+                                    <td>
+                                        <figure><img src="assets/images/images.jpg" alt="product-image"
+                                                class="product-img"></figure>
                                     </td>
                                     <td>News Mobile App UI KIT...</td>
                                     <td> Active</td>
                                     <td>10</td>
-                                    <td>320</td> 
+                                    <td>320</td>
                                 </tr>
                                 <tr class="order-record">
                                     <td>
                                         <span>4</span>
-                                        <figure><img src="assets/images/images (1).jpg" alt="product-image"></figure>
+                                    </td>
+                                    <td>
+                                        <figure><img src="assets/images/images (1).jpg" alt="product-image"
+                                                class="product-img"></figure>
                                     </td>
                                     <td>News Mobile App UI KIT...</td>
                                     <td> Active</td>
                                     <td>10</td>
-                                    <td>320</td> 
+                                    <td>320</td>
                                 </tr>
                             </tbody>
                         </table>

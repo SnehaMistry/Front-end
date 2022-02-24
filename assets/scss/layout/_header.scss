@@ -3,18 +3,69 @@
 .header-wrapper{
     // height: $header-height;
     align-items: center;
-    height: 100px;
-
+    padding: $header-padding;
+    border-bottom: $border;
     & .header-icon{
         @include icon;
         & i{
-            box-shadow: 8px -7px #438ffe69;
+            box-shadow: 8px -7px $header-icon-shadow;
         }
     }
 
+    & .search-wrapper{
+        margin-left: $seach-margin-left;
+        & input{
+            background-color: $search-bg-color;
+            outline: none;
+            padding: 12px 25px;
+            font-size: $search-font;
+            color: $search-font-color;
+            border: none;
+            width: 360px;
+        }
+
+        & button{
+            border: none;
+            padding: 12px;
+            margin-left:  -4px;
+            background-color: $primary;
+            color: $font-color;
+        }
+    }
+    & .option {
+        margin-left: 2rem;
+
+        & figure{
+            display: inline-block;
+            background-color: $user-bg;
+            border-radius: $rounded-circle;    
+
+            & img{
+                height: $img-height;
+                width: $img-width;
+            }    
+        }
+
+        & select{
+            border: none;
+            color: $search-font-color;
+            margin-left: $select-margin-left;
+            margin-right: 40px;
+        }
+
+    }
     & .option-icon{
         @include icon;
         color: $sidebar-icon-color;
+
+        .message::after{
+            @include notification-upper-icon;
+            right: 10.7rem;
+        }
+        .bell::after{
+            @include notification-upper-icon;
+            right: 14rem;
+        }
     }
     
 }

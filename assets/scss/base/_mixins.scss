@@ -3,6 +3,17 @@
 @mixin icon {
         color: $primary;
         color: #438ffe;
-        font-size: 2rem;
+        font-size: $icon-font;
 
+}
+
+@mixin notification-upper-icon {
+        content:".";
+        position: absolute;
+        background: $notification-icon-color;
+        top: 1.5rem;
+        height: 5px;
+        width: 5px;
+        font-size: 0.5rem;
+        border-radius: 50%;
 }

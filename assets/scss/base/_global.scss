@@ -27,6 +27,12 @@ body {
 .overflow-auto{
     overflow-y: auto;
 }
+.mt-0{
+    margin-top: 0;
+}
+.font-family{
+    font-family: $font-family;
+}
 //Flex classes
 .d-flex{
     display: flex;
