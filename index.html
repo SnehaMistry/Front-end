@@ -12,7 +12,7 @@
 
 <body>
     <!--Start scss dashboard structure  -->
-    <div class="h-100 w-100 overflow-hidden d-flex col">
+    <div class="h-100 w-100 overflow-auto d-flex col">
         <!-- start header component -->
         <header class="header-wrapper">
             <div class="d-flex justify-align-center p-2">
@@ -48,7 +48,7 @@
         <!-- end header -->
 
         <!-- main section start -->
-        <main class="d-flex grow-1 overflow-hidden">
+        <main class="d-flex grow-1 overflow-auto">
             <input type="checkbox" id="toggle">
             <!-- sidebar section start -->
             <aside class="sidebar">
@@ -81,10 +81,10 @@
                 <h1>Dashboard</h1>
 
                 <!-- Start dashboard overview -->
-                <div class="card-wrapper d-flex">
+                <div class="card-wrapper d-flex flex-wrap">
                     <!-- start view card -->
-                    <div class="card d-flex col card-start-child">
-                        <div class="inner-card card-views">
+                    <div class="card d-flex col ">
+                        <div class="card-start-child inner-card card-views ">
                             <div class="d-flex row justify-space-between justify-align-center">
                                 <div class="d-flex card-icon justify-content-center justify-align-center card-icon-bg">
                                     <span><i class="icon-bi_eye-fill icon"></i></span>
@@ -123,7 +123,7 @@
                                 </div>
                                 <div class="content-font"><span>10.820</span></div>
                                 <div class="content-detail">
-                                    <span>+ Add New Product</span>
+                                    <span class="user-color">+ Add New Product</span>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +153,8 @@
                     </div>
                     <!-- end users -->
                     <!-- start Sells -->
-                    <div class="card d-flex col card-end-child">
-                        <div class="inner-card card-sell">
+                    <div class="card d-flex col">
+                        <div class="inner-card card-sell card-end-child">
                             <div class="d-flex row justify-space-between justify-align-center">
                                 <div class="d-flex card-icon justify-content-center justify-align-center card-icon-bg">
                                     <span><i class="icon-bi_cart-dash-fill icon"></i></span>
@@ -176,78 +176,98 @@
                     </div>
                     <!-- end Sells -->
                 </div>
-                <div class="view-order d-flex grow-1 h-100">
-                    <div class="order-details grow-1 h-100">
-                        <table class="w-100 table h-100">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th></th>
-                                    <th>Product Name</th>
-                                    <th>Status</th>
-                                    <th>Sold</th>
-                                    <th>View</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="order-record">
-                                    <td>
-                                        <span>1</span>
-                                    </td>
-                                    <td>
-                                        <figure><img src="assets/images/images.jpg" alt="product-image"
-                                                class="product-img"></figure>
-                                    </td>
-                                    <td>News Mobile App UI KIT...</td>
-                                    <td> Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr class="order-record">
-                                    <td>
-                                        <span>2</span>
-                                    </td>
-                                    <td>
-                                        <figure><img src="assets/images/images (1).jpg" alt="product-image"
-                                                class="product-img"></figure>
-                                    </td>
-                                    <td>News Mobile App UI KIT...</td>
-                                    <td> Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr class="order-record">
-                                    <td>
-                                        <span>3</span>
-                                    </td>
-                                    <td>
-                                        <figure><img src="assets/images/images.jpg" alt="product-image"
-                                                class="product-img"></figure>
-                                    </td>
-                                    <td>News Mobile App UI KIT...</td>
-                                    <td> Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                                <tr class="order-record">
-                                    <td>
-                                        <span>4</span>
-                                    </td>
-                                    <td>
-                                        <figure><img src="assets/images/images (1).jpg" alt="product-image"
-                                                class="product-img"></figure>
-                                    </td>
-                                    <td>News Mobile App UI KIT...</td>
-                                    <td> Active</td>
-                                    <td>10</td>
-                                    <td>320</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="view-order d-flex grow-1 overflow-hidden">
+                    <div class="d-flex col order-details grow-1 overflow-hidden">
+                        <div class="overflow-hidden">
+                            <table class="table w-100">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th></th>
+                                        <th>Product Name</th>
+                                        <th>Status</th>
+                                        <th>Sold</th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="overflow-auto">
+                            <table class="table w-100">
+                                <tbody>
+                                    <tr class="order-record">
+                                        <td>
+                                            <span>1</span>
+                                        </td>
+                                        <td>
+                                            <figure><img src="assets/images/images.jpg" alt="product-image"
+                                                    class="product-img"></figure>
+                                        </td>
+                                        <td>News Mobile App UI KIT...</td>
+                                        <td> Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="order-record">
+                                        <td>
+                                            <span>2</span>
+                                        </td>
+                                        <td>
+                                            <figure><img src="assets/images/images (1).jpg" alt="product-image"
+                                                    class="product-img"></figure>
+                                        </td>
+                                        <td>News Mobile App UI KIT...</td>
+                                        <td> Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="order-record">
+                                        <td>
+                                            <span>3</span>
+                                        </td>
+                                        <td>
+                                            <figure><img src="assets/images/images.jpg" alt="product-image"
+                                                    class="product-img"></figure>
+                                        </td>
+                                        <td>News Mobile App UI KIT...</td>
+                                        <td> Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="order-record">
+                                        <td>
+                                            <span>4</span>
+                                        </td>
+                                        <td>
+                                            <figure><img src="assets/images/images (1).jpg" alt="product-image"
+                                                    class="product-img"></figure>
+                                        </td>
+                                        <td>News Mobile App UI KIT...</td>
+                                        <td> Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                    <tr class="order-record">
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                        <td>
+                                            <figure><img src="assets/images/images (1).jpg" alt="product-image"
+                                                    class="product-img"></figure>
+                                        </td>
+                                        <td>News Mobile App UI KIT...</td>
+                                        <td> Active</td>
+                                        <td>10</td>
+                                        <td>320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="order-graph">
-                        <div class="d-flex">
-                            <div>
+                        <!-- Graph heading start-->
+                        <div class="d-flex justify-space-between">
+                            <div class="graph-heading">
                                 <h2>Views & Sales</h2>
                             </div>
                             <div>
@@ -257,10 +277,62 @@
                                 </select>
                             </div>
                         </div>
+                        <!-- end graph heading -->
+                        <!-- start graph -->
                         <div>
-                            <span><i class="icon-stop2"></i> Total Views</span>
-                            <span><i class="icon-stop2"></i> Total Sells</span>
+                            <span><i class="icon-stop2 sell-color"></i> Total Views</span>
+                            <span><i class="icon-stop2 graph-color"></i> Total Sells</span>
                         </div>
+                        <div class="graph-wrapper d-flex">
+                            <div id="y-axis">
+                                <span class="d-block y-name">4K</span>
+                                <span class="d-block y-name">3K</span>
+                                <span class="d-block y-name">2K</span>
+                                <span class="d-block y-name">1K</span>
+                                <span class="d-block y-name">0</span>
+                            </div>
+                            <div class="d-flex graph">
+                                <div class="graph-item h-60">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>    
+                                </div>
+                                <div class="graph-item h-55">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>
+                                </div>
+                                <div class="graph-item h-65">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>
+                                </div>
+                                <div class="graph-item h-70">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>
+                                </div>
+                                <div class="graph-item h-75">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>
+                                </div>
+                                <div class="graph-item h-60">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>
+                                </div>
+                                <div class="graph-item h-70">
+                                    <div class="h-40 sell-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div id="x-axis">
+                            <span class="x-name">M</span>
+                            <span class="x-name">T</span>
+                            <span class="x-name">W</span>
+                            <span class="x-name">T</span>
+                            <span class="x-name">F</span>
+                            <span class="x-name">S</span>
+                            <span class="x-name">S</span>
+                        </div>
+                        <!-- end graph -->
                     </div>
                 </div>
                 <!-- end overview section -->

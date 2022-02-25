@@ -19,24 +19,43 @@
     & .icon-forward{
         position: absolute;
         padding: 0;
-        top: 0;
+        top: 33rem;
         left:4.7rem;
     }
    
 }   
 
 #toggle:checked +.sidebar{
-    transform: translateX(-110px);
+    transform: translateX(-70px);
     padding: 0;
     transition: all 1s ease-in-out;
     width: 0;
 
     & .icon-forward{
         position: absolute;
-        transform: translateX(110px);
-        left: 0;
+        transform: rotate(180deg);
     }
 }
 #toggle:not(:checked) +.sidebar{
     transition: all 1s ease-in-out;
+}
+
+@media (max-width: 360px) {
+    .sidebar{
+        transform: translateX(-70px);
+    }
+    #toggle:checked +.sidebar{
+        transform: translateX(30px);
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .sidebar{
+        transform: translateX(-70px);
+        width: 0;
+        padding: 0;
+    }
+    #toggle:checked +.sidebar{
+        transform: translateX(30px);
+    }
 }

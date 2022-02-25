@@ -6,4 +6,9 @@
 .text-decoration-none {
   text-decoration: none;
 }
+
+select {
+  border: none;
+  background-color: transparent;
+}
 /*# sourceMappingURL=index.css.map */

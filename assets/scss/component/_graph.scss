@@ -1,0 +1,38 @@
+//graph styles here
+
+.order-graph{
+    padding: 1.5rem;
+    width: 40%;
+    background-color: $bg-primary;
+
+    & .graph-wrapper
+    {
+        height: 70%;
+        align-items: flex-end;        
+    }
+    .graph{
+        
+        height: 90%;
+        align-items: flex-end;
+        & .graph-item
+        {
+            margin: 0 $right-margin;
+        }
+    }
+}   
+.graph-heading{
+    margin-bottom: 1.5rem;
+}
+
+#x-axis{
+    margin-top: 1.2rem;
+    .x-name{
+        margin-left: 3rem;
+    }
+}
+
+#y-axis{
+    .y-name{
+        margin-top: 3rem;
+    }
+}

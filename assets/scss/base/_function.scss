@@ -5,6 +5,9 @@ $color in $icon-color {
     .#{$key}-color {
         color: $color;
     }
+    .#{$key}-bg{
+        background-color: $color;
+    }
     .card-#{$key}{
         .card-icon-bg{
             background-color: lighten($color, 30%);
@@ -24,7 +27,19 @@ $color in $icon-color {
                 .icon{
                     color: $bg-primary;
                 }
+                .icon-timeline{
+                    color: $bg-primary;
+                }
             }
         }
+    }
+}
+
+@each $key,$height in $heights {
+    .h-#{$key + 5}{
+        height: $height + 5;
+    }
+    .h-#{$key}{
+        height: $height;
     }
 }

@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html,
 body {
@@ -21,9 +22,9 @@ body {
 .w-100{
     width: 100%;
 }
-.overflow-hidden{
-    overflow: hidden;
-}
+// .overflow-hidden{
+//     overflow: hidden;
+// }
 .overflow-auto{
     overflow-y: auto;
 }
@@ -36,6 +37,9 @@ body {
 //Flex classes
 .d-flex{
     display: flex;
+}
+.d-block{
+    display: block;
 }
 .row{
     flex-direction: row;
@@ -58,9 +62,14 @@ body {
 .justify-align-center{
     align-items:center ;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .grow-1{
     flex-grow: 1;
 }
-
+.graph-p{
+    padding: $graph-padding;
+}
  
  

@@ -1,6 +1,35 @@
-.dashboard-container{
-    background-color: $bg-secondary;
-    padding: 2rem;
-    color: $primary-text-color;
+.dashboard-container {
+  background-color: $bg-secondary;
+  padding: 2rem;
+  color: $primary-text-color;
 }
 
+@media (max-width: 769px) {
+  .view-order {
+    display: block;
+    margin-top: 2rem;
+
+    & .order-details {
+      width: 92.3%;
+    }
+
+    & .order-graph {
+      margin-top: 2rem;
+      width: 92.3%;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .view-order {
+    display: block;
+    & .order-details {
+      width: 85%;
+    }
+
+    & .order-graph {
+      margin-top: 2rem;
+      width: 85%;
+    }
+  }
+}

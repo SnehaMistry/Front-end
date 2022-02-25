@@ -12,6 +12,8 @@ $border : 0.1rem solid #e4e4e5;
 
 //icon-font
 $icon-font : 1.4rem;
+$mobile-font-size : 0.8rem;
+
 //header-styles
 $header-padding: 1rem;
 $seach-margin-left : 4rem;
@@ -20,6 +22,28 @@ $select-margin-left:16px;
 $img-height : 42px;
 $img-width:45px;
 
+//mobile responsive image height and width
+$mob-img-height: 30px;
+$mob-img-width: 35px;
+$mob-select-margin-left:10px;
+$seach-margin-left : 2rem;
+
 //sidebar-style
 $sidebar-padding: 1.5rem;
+//inside element margins
+
+$right-margin : 1.8rem;
+
+//graph styles
+$graph-padding : 0 0.23rem;
+$heights : (
+    10: 10%,
+    20: 20%,
+    30: 30%,
+    40: 40%,
+    50: 50%,
+    60: 60%,
+    70: 70%,
+    80: 80%,
+    90: 90%);
 
