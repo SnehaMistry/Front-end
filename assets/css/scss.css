@@ -490,12 +490,22 @@ body {
 }
 
 .order-details .table {
+  position: relative;
   border-spacing: 0 15px;
+}
+
+.order-details .table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 
 .order-details .table td, .order-details .table th {
   text-align: left;
-  padding: 0.7rem;
+  padding-right: 20px;
 }
 
 .order-details .table td {
@@ -503,28 +513,15 @@ body {
   background-color: #f5f7f9;
 }
 
-.order-details .table th:nth-child(1), .order-details .table td:nth-child(1) {
-  width: 5%;
-}
-
-.order-details .table th:nth-child(3), .order-details .table td:nth-child(3) {
-  width: 35%;
-}
-
-.order-details .table th:nth-child(4), .order-details .table td:nth-child(5) {
-  width: 15%;
-}
-
-.order-details .table th:nth-child(5), .order-details .table td:nth-child(5) {
-  width: 10%;
-}
-
-.order-details .table th:nth-child(6), .order-details .table td:nth-child(6) {
-  width: 10%;
-}
-
 .order-details .table td:nth-child(4) {
   color: #438ffe;
+}
+
+.order-details .table .product-name {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (max-width: 991.98px) {
