@@ -7,32 +7,37 @@
 
     & .graph-wrapper
     {
-        height: 70%;
+        height: 75%;
         align-items: flex-end;        
     }
     .graph{
-        
         height: 90%;
         align-items: flex-end;
-        & .graph-item
-        {
-            margin: 0 $right-margin;
-        }
+    }
+    .x-name{
+        margin-top: 1rem;
+        color: $font-color;
     }
 }   
 .graph-heading{
     margin-bottom: 1.5rem;
 }
 
-#x-axis{
-    margin-top: 1.2rem;
-    .x-name{
-        margin-left: 3rem;
-    }
+#selectweek{
+    color: $font-color;
 }
 
-#y-axis{
+.y-name{
+    margin-top: 3rem;
+    color: $font-color;
+}
+
+@include for-size(laptop-screen)
+{
+    .order-graph{
+        height: 50%;
+    }
     .y-name{
-        margin-top: 3rem;
+        margin-top: 3.5rem;
     }
 }

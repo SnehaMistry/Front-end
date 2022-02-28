@@ -7,7 +7,7 @@ $product-icon-color : #8bc38a;
 $sells-icon-color : #8ac0c1;
 $graph-color : #fe764b;
 $row-bg-color: #f5f7f9;
-$sidebar-icon-color: #abb1bf;
+$font-color: #abb1bf;
 $primary-text-color:#160e4d;
 $img-bg: #83bcbd;
 $notification-color: #fe7e56;
@@ -22,14 +22,13 @@ $body-text-color : $primary-text-color;
 
 $sidebar-bg: $bg-secondary;
 $sidebar-active: $primary;
-$sidebar-icon:$sidebar-icon-color;
+$sidebar-icon:$font-color;
 
 //header color
 
-$search-font-color: $sidebar-icon-color;
+$search-font-color: $font-color;
 $search-bg-color: $row-bg-color;
 $user-bg: $img-bg;
-$font-color:$bg-primary;
 $notification-icon-color : $notification-color;
 
 //table colors

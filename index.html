@@ -12,17 +12,17 @@
 
 <body>
     <!--Start scss dashboard structure  -->
-    <div class="h-100 w-100 overflow-auto d-flex col">
+    <div class="h-100 w-100 overflow-hidden d-flex col">
         <!-- start header component -->
         <header class="header-wrapper">
-            <div class="d-flex justify-align-center p-2">
+            <div class="d-flex p-2">
                 <!-- header Left side search and dashboard icon -->
-                <div class="header-search d-flex grow-1">
+                <div class="header-search d-flex justify-align-center grow-1">
                     <div class="header-icon">
-                        <span><i class="icon-stop2"></i></span>
+                        <span><i class="icon-square_icon"></i></span>
                     </div>
                     <div class="search-wrapper">
-                        <label for="search"><i class="icon-search"></i></label>
+                        <label for="search" class="relative"><i class="icon-search"></i></label>
                         <input type="search" id="search" placeholder="Search for transacton item, etc." />
                         <button class="search-btn">Search</button>
                     </div>
@@ -48,12 +48,12 @@
         <!-- end header -->
 
         <!-- main section start -->
-        <main class="d-flex grow-1 overflow-auto">
+        <main class="d-flex grow-1 overflow-hidden relative">
             <input type="checkbox" id="toggle">
             <!-- sidebar section start -->
             <aside class="sidebar">
                 <label for="toggle" id="toggle-icon"><i class="icon-forward"></i></label>
-                <nav class="d-flex col h-100">
+                <nav class="d-flex col h-100 justify-align-center">
                     <div class="d-flex col grow-1">
                         <div class="top-link link-wrapper"><a href="" class="nav-link text-decoration-none"><span
                                     class="icon-radix-icons_dashboard"></span></a></div>
@@ -75,7 +75,7 @@
             <!-- end sidebar section -->
 
             <!--start content section  -->
-            <section class="dashboard-container grow-1 d-flex col overflow-auto">
+            <section class="dashboard-container grow-1 d-flex col">
 
                 <!-- Dashboard heading -->
                 <h1>Dashboard</h1>
@@ -176,10 +176,10 @@
                     </div>
                     <!-- end Sells -->
                 </div>
-                <div class="view-order d-flex grow-1 overflow-hidden">
-                    <div class="d-flex col order-details grow-1 overflow-hidden">
-                        <div class="overflow-hidden">
-                            <table class="table w-100">
+                <div class="view-order d-flex grow-1">
+                    <div class="d-flex col order-details grow-1">
+                        <table class="table w-100"></table>
+                            <div class="">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -190,10 +190,8 @@
                                         <th>View</th>
                                     </tr>
                                 </thead>
-                            </table>
-                        </div>
-                        <div class="overflow-auto">
-                            <table class="table w-100">
+                            </div>
+                            <div class="overflow-auto">
                                 <tbody>
                                     <tr class="order-record">
                                         <td>
@@ -261,14 +259,14 @@
                                         <td>320</td>
                                     </tr>
                                 </tbody>
-                            </table>
-                        </div>
+                            </div>
+                        </table>
                     </div>
                     <div class="order-graph">
                         <!-- Graph heading start-->
                         <div class="d-flex justify-space-between">
                             <div class="graph-heading">
-                                <h2>Views & Sales</h2>
+                                <h2>Views           & Sales</h2>
                             </div>
                             <div>
                                 <label for="selectweek"></label>
@@ -291,46 +289,44 @@
                                 <span class="d-block y-name">1K</span>
                                 <span class="d-block y-name">0</span>
                             </div>
-                            <div class="d-flex graph">
-                                <div class="graph-item h-60">
+                            <div class="d-flex graph justify-space-around grow-1">
+                                <div class="graph-item h-80">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>    
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>    
+                                    <span class="x-name">M</span>
                                 </div>
                                 <div class="graph-item h-55">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>
+                                    <span class="x-name">T</span>
                                 </div>
                                 <div class="graph-item h-65">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>
+                                    <span class="x-name">W</span>
                                 </div>
                                 <div class="graph-item h-70">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>
+                                    <span class="x-name">T</span>
                                 </div>
                                 <div class="graph-item h-75">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>
+                                    <span class="x-name">F</span>
                                 </div>
                                 <div class="graph-item h-60">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>
+                                    <span class="x-name">S</span>
                                 </div>
                                 <div class="graph-item h-70">
                                     <div class="h-40 sell-bg graph-p"></div>
-                                    <div class="h-60 graph-bg graph-p"></div>
+                                    <div class="h-60 graph-bg graph-p graph-bm"></div>
+                                    <span class="x-name">S</span>
                                 </div>
                             </div>
                             
-                        </div>
-                        <div id="x-axis">
-                            <span class="x-name">M</span>
-                            <span class="x-name">T</span>
-                            <span class="x-name">W</span>
-                            <span class="x-name">T</span>
-                            <span class="x-name">F</span>
-                            <span class="x-name">S</span>
-                            <span class="x-name">S</span>
                         </div>
                         <!-- end graph -->
                     </div>

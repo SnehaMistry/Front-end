@@ -11,4 +11,8 @@ select {
   border: none;
   background-color: transparent;
 }
+
+h4 {
+  font-weight: unset;
+}
 /*# sourceMappingURL=index.css.map */

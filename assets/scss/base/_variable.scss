@@ -8,14 +8,17 @@ $font-bold: 500;
 // Border-radius
 $border-radius: 12px;
 $rounded-circle: 50%;
-$border : 0.1rem solid #e4e4e5;
+$border : 1px solid #e4e4e5;
+
+//transition
+$transition: all 0.4s ease-in-out;  
 
 //icon-font
 $icon-font : 1.4rem;
 $mobile-font-size : 0.8rem;
 
 //header-styles
-$header-padding: 1rem;
+$header-padding: 1rem 1.5rem;
 $seach-margin-left : 4rem;
 $search-font:  0.8rem;
 $select-margin-left:16px;
@@ -26,7 +29,6 @@ $img-width:45px;
 $mob-img-height: 30px;
 $mob-img-width: 35px;
 $mob-select-margin-left:10px;
-$seach-margin-left : 2rem;
 
 //sidebar-style
 $sidebar-padding: 1.5rem;
@@ -35,7 +37,8 @@ $sidebar-padding: 1.5rem;
 $right-margin : 1.8rem;
 
 //graph styles
-$graph-padding : 0 0.23rem;
+$graph-padding : 0 0.5rem;
+$bottom-padding : 20px;
 $heights : (
     10: 10%,
     20: 20%,

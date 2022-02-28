@@ -1,5 +1,8 @@
 // table styles are here
 
+.view-order{
+    overflow-y: hidden;
+}
 .order-details{
     background-color: $table-bgcolor;
     margin-right: $right-margin;
@@ -41,3 +44,20 @@
 
     }
 }
+@include for-size(laptop-screen) {
+    .view-order {
+        display: block;
+        margin-top: 2rem;
+        overflow: unset; 
+        & .order-details {
+          width: 100%;
+        }
+        & .order-graph {
+          margin-top: 2rem;
+          width: 100%;
+          overflow-y: auto;
+        }
+      }
+}
+
+  

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8l4u9o');
-  src:  url('fonts/icomoon.eot?8l4u9o#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8l4u9o') format('truetype'),
-    url('fonts/icomoon.woff?8l4u9o') format('woff'),
-    url('fonts/icomoon.svg?8l4u9o#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ogg831');
+  src:  url('fonts/icomoon.eot?ogg831#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ogg831') format('truetype'),
+    url('fonts/icomoon.woff?ogg831') format('woff'),
+    url('fonts/icomoon.svg?ogg831#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,17 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search:before {
-  content: "\e90c";
-}
-.icon-timeline:before {
-  content: "\e90b";
-}
-.icon-backward:before {
-  content: "\f04a";
-}
-.icon-forward:before {
-  content: "\f04e";
+.icon-square_icon:before {
+  content: "\e90d";
+  color: #1271ff;
 }
 .icon-ant-design_message-outlined:before {
   content: "\e900";
@@ -70,6 +62,15 @@
 .icon-radix-icons_dashboard:before {
   content: "\e90a";
   color: #1271ff;
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-timeline:before {
+  content: "\e90b";
+}
+.icon-forward:before {
+  content: "\f04e";
 }
 .icon-stop2:before {
   content: "\ea1e";
