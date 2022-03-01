@@ -1,0 +1,13 @@
+//button style is here
+
+.filter-button{
+    background-color: $primary;
+    color: $bg-primary;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+
+    & i{
+        margin-right: 7px;
+    }
+}

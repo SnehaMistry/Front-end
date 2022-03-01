@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="assets/css/scss.css" />
+  </head>
+  <body>
+    <!-- start Dashboard body-->
+    <div class="overflow-hidden h-100 w-100 d-flex">
+      <!-- sidebar wrapper -->
+      <input type="checkbox" id="toggle">
+        <div class="sidebar">
+        <aside>
+            <!-- start sidebar -->
+            <div class="dashboard-icon relative">
+                <!-- site icon -->
+                <h1>TallyScan</h1>
+                <label for="toggle"><i class="icon-keyboard_arrow_right icon-forward"></i></label>
+            <!-- end -->
+          </div>
+          <div class="">
+              <!-- navigation general link start-->
+            <nav>
+                <!-- start general links -->
+              <div>
+                <h3 class="nav-heading">General</h3>
+                <ul>
+                  <li class="nav-link"><i class="icon-search icon"></i><span>Search</span></li>
+                  <li class="nav-link"><i class="icon-ph_bell icon"></i><span>Alerts</span></li>
+                  <li class="nav-link"><i class="icon-tag icon"></i><span>Tags</span></li>
+                </ul>
+              </div>
+              <!-- end general links -->
+              <!-- start other links -->
+              <div>
+                <h3 class="nav-heading mt-3">Others</h3>
+                <ul>
+                  <li class="nav-link"><i class="icon-ci_settings-filled icon"></i><span>Setting</span></li>
+                  <li class="nav-link"><i class="icon-wb_sunny icon"></i><span>Tips</span></li>
+                  <li class="nav-link"><i class="icon-trash-o icon"></i><span>Trash</span></li>
+                  <li class="nav-link"><i class="icon-login icon"></i><span>Logout</span></li>
+                </ul>
+              </div>
+              <!-- end other links -->
+            </nav>
+            <!-- end navigation links -->
+          </div>
+          <!-- end sidebar -->
+        </aside>
+      </div>
+      <!-- end sidebar wrapper -->
+      <!-- start header wrapper -->
+      <main class="d-flex col grow-1 overflow-hidden">
+        <header>
+          <!-- start header -->
+          <div class="header-wrapper d-flex grow-1 flex-align-center justify-space-between">
+            <!-- title -->
+            <div class="d-flex">
+              <h2>Dashboard</h2>
+            </div>
+            <!-- end title -->
+            <!-- profile start -->
+            <div class="d-flex flex-align-center relative">
+                <input type="checkbox" id="profile-option"/>
+                <div class="option-wrapper d-flex row flex-align-center">
+                    <!-- notification icon -->
+                    <span><i class="icon-ph_bell"></i></span>
+                    <!-- user image and name -->
+                    <div>
+                        <figure>
+                        <img
+                            src="assets/images/icons8-person-female-96.png"
+                            alt="user-image"
+                        />
+                        </figure>
+                    </div>
+                    <span>John Smith</span>
+                </div>
+                <label for="profile-option"><i class="icon-keyboard_arrow_down"></i></label>
+            </div>
+            <!-- end profile -->
+          </div>
+          <!-- end header -->
+        </header>
+        <!-- start dashboard main content -->
+        <section class="dashboard-container d-flex col">
+            <!-- filter button -->
+            <div class="d-flex flex-end">
+                <button class="filter-button"><i class="icon-filter1"></i><span>Filter</span></button>
+            </div>
+            <!-- end -->
+            <!-- card section start -->
+            <div class="card-wrapper d-flex grow-1 flex-wrap">
+                <!-- start Barcode card -->
+                <div class="card d-flex col card-icon-barcode">
+                    <div class="inner-card card-views d-flex grow-1 justify-space-between flex-align-center">
+                        <div>
+                            <h5>Scans</h5>
+                            <strong class="count">350</strong>
+                        </div>
+                        <div>
+                            <span><i class="icon-barcode card-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end barcode -->
+                <!-- start list card  -->
+                <div class="card d-flex col card-icon-list">
+                    <div class="inner-card card-views d-flex grow-1 justify-space-between flex-align-center">
+                        <div>
+                            <h5>Lists</h5>
+                            <strong class="count">350</strong>
+                        </div>
+                        <div>
+                            <span><i class="icon-format_list_bulleted card-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end list -->
+                <!-- start costs card -->
+                <div class="card d-flex col card-icon-cost">
+                    <div class="inner-card d-flex grow-1 justify-space-between flex-align-center card-icon-cost">
+                        <div>
+                            <h5>Costs</h5>
+                            <strong class="count">345</strong>
+                        </div>
+                        <div>
+                            <span><i class="icon-moneybag card-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end costs -->
+                <!-- start Buy card -->
+                <div class="card d-flex col card-icon-cart">
+                    <div class="inner-card d-flex grow-1 justify-space-between flex-align-center">
+                        <div>
+                            <h5>Buy Now</h5>
+                            <strong class="count">350</strong>
+                        </div>
+                        <div>
+                            <span><i class="icon-bi_cart-dash-fill card-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end buy -->
+                <!-- start cheaper card-->
+                <div class="card d-flex col card-icon-dolor">
+                    <div class="inner-card card-views d-flex grow-1 justify-space-between flex-align-center">
+                        <div>
+                            <h5>Buy Cheaper</h5>
+                            <strong class="count">350</strong>
+                        </div>
+                        <div>
+                            <span><i class="icon-attach_money card-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end cheaper -->
+                <!-- start Healthier -->
+                <div class="card d-flex col card-icon-heart">
+                    <div class="inner-card card-views d-flex grow-1 justify-space-between flex-align-center">
+                        <div>
+                            <h5>Buy Healthier</h5>
+                            <strong class="count">350</strong>
+                        </div>
+                        <div>
+                            <span><i class="icon-heartbeat card-icon"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Healthier -->
+            </div>
+            <!-- card section end  -->
+            <!-- start recent Activity section -->
+            <div class="d-flex col activity">
+                <h2>Recent Activity</h2>
+
+                <div class="table-wrapper overflow-auto">
+                    <table>
+                        <thead>
+                            <tr>
+                            <th>Items <i class="icon-sort"></i></th>
+                            <th>Date <i class="icon-sort"></i></th>
+                            <th>Type</th>
+                            <th>Est. Cost<i class="icon-sort"></i></th>
+                            <th>Last <i class="icon-sort"></i></th>
+                            <th>List <i class="icon-sort"></i></th>
+                            <th>Auto</th>
+                            <th>Buy Now</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="d-flex flex-align-center">
+                                    <figure>
+                                        <img src="assets/images/product.webp" alt="product-image">
+                                    </figure>
+                                    <strong class="word-wrap">
+                                        Skippy Peanut Butter 160z
+                                    </strong>
+                                </td>
+                                <td>07 nov, 8:35PM</td>
+                                <td>Discarded</td>
+                                <td>$40.27</td>
+                                <td>18 Aug</td>
+                                <td>Grocery</td>
+                                <td>No</td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- end recent activity -->
+        </section>   
+      </main>
+      <!-- end -->
+    </div>
+    <!-- end Dashboard body -->
+  </body>
+</html>

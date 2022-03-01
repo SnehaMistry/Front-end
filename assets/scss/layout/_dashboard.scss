@@ -1,0 +1,20 @@
+.dashboard-container {
+  background-color: $bg-secondary;
+  padding: 2rem;
+  overflow-y: hidden;
+}
+.activity{
+  overflow-y: hidden;
+}
+
+@media (max-width: 1180px) {
+  .dashboard-container {
+      overflow-y: auto;
+    }
+
+    .activity{
+      overflow: unset;
+    }
+}
+
+
