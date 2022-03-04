@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?s9cavi');
+  src:  url('fonts/icomoon.eot?s9cavi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s9cavi') format('truetype'),
+    url('fonts/icomoon.woff?s9cavi') format('woff'),
+    url('fonts/icomoon.svg?s9cavi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-filter1:before {
+  content: "\e908";
+}
+.icon-attach_money:before {
+  content: "\e904";
+}
+.icon-format_list_bulleted:before {
+  content: "\e905";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e90b";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e90a";
+}
+.icon-wb_sunny:before {
+  content: "\e906";
+}
+.icon-login:before {
+  content: "\e907";
+}
+.icon-moneybag:before {
+  content: "\e900";
+}
+.icon-tag:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-trash-o:before {
+  content: "\f014";
+}
+.icon-barcode:before {
+  content: "\f02a";
+}
+.icon-filter:before {
+  content: "\f0b0";
+}
+.icon-sort:before {
+  content: "\f0dc";
+}
+.icon-unsorted:before {
+  content: "\f0dc";
+}
+.icon-heartbeat:before {
+  content: "\f21e";
+}
+.icon-bi_cart-dash-fill:before {
+  content: "\e901";
+}
+.icon-ci_settings-filled:before {
+  content: "\e903";
+}
+.icon-ph_bell:before {
+  content: "\e909";
+}

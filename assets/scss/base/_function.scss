@@ -1,0 +1,34 @@
+// Function styles goes here
+
+@each $key,
+$color in $icon-color {
+    .#{$key}-color {
+        color: $color;
+    }
+    .#{$key}-bg{
+        background-color: $color;
+    }
+    .card-icon-#{$key}
+    {
+        & .card-icon{
+            font-size: 1.5rem;
+            padding: 1rem;
+            background-color: lighten($color, 30%);
+            color: $color;
+            border-radius: $rounded-circle;
+        }
+
+        & .inner-card:hover{
+            background-color: $color;
+            color: $bg-primary;
+            transition: $transition;
+
+            & h5{
+                color: $bg-primary;
+            }
+        }
+
+    }
+    
+}
+

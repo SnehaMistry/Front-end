@@ -1,0 +1,30 @@
+// Helper classes for basic css properties
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height  : 100%;
+    overflow: hidden;
+}
+
+body {
+    line-height: 1;
+    font-family: $font-family;
+    font-size: $font-size-base;
+}
+
+.overflow-auto{
+    overflow-y: auto;
+}
+.font-family{
+    font-family: $font-family;
+}
+.relative {
+    position: relative;
+}
+.card-width{
+    width: 16.5%;
+}

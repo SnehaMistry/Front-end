@@ -1,0 +1,36 @@
+//All colors code 
+
+$primary : #00b11c;
+$bg-primary : #ffffff;
+$bg-secondary : #fafafa;
+$font-primary: #080808;
+$font-secondary : #82838b;
+$primary-icon:#38bc86;
+$sucess: #369dff;
+$warning : #f18c2d;
+$barcode : #979797;
+$light-black : #2f3240;
+$dolor: #6b68f6;
+$heart : #ee5f5d;
+$border : #e2e2e2;
+$light-blue: #9cd8ef;
+//body color
+
+$body-bg: $bg-primary;
+$body-text-color : $font-primary;
+
+//sidebar color
+
+$sidebar-bg: $bg-primary;
+$sidebar-active: $primary;
+$sidebar-icon:$font-secondary;
+
+//icon color
+$icon-color :(
+    "barcode" : $barcode,
+    "list": $sucess,
+    "cost": $primary-icon,
+    "cart": $warning,
+    "dolor": $dolor,
+    "heart":$heart
+);

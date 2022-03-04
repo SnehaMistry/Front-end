@@ -1,0 +1,46 @@
+// header component styles are here
+#profile-option{
+    display: none;
+}
+.icon-option{
+    transform: rotate(45deg);
+}
+
+.header-wrapper{
+    padding: $header-updown-padding $header-side-padding;
+    border-bottom: $border;
+    & .icon-ph_bell{
+        font-size: 1.5rem;
+        margin-right: 30px;
+    }
+    & figure{
+        display: inline-block;
+        border-radius: $rounded-circle;    
+        background-color: $img-bgcolor;
+        margin-right: 15px;
+        & img{
+            height: $img-height;
+            width: $img-width;
+            transform: rotate(-20deg);
+        }    
+    }
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+
+@include for-size(phone-only)  { 
+
+    .header-wrapper{
+
+        #profile-wrapper{
+            display: none;
+        }
+    } 
+
+ }
+
+@include for-size(sm-size-phone) {
+    .header-wrapper{
+    }
+} 

@@ -1,0 +1,32 @@
+//mixims are here
+
+@mixin sidebar-link {
+    padding: 1rem 1.5rem;
+    color: $font-secondary;
+    & .icon{
+      font-size: 1.5rem;
+     
+    }
+    &  span{
+      margin-left: 15px;
+    }
+}
+
+
+@mixin for-size($size) {
+        @if $size == sm-size-phone {
+          @media (max-width: 320px){ @content; } 
+        }@else if $size == phone-only {
+          @media (max-width: 575.98px) { @content; }
+        } @else if $size == tablet-screen {
+          @media (max-width: 767.98px) { @content; }
+        } @else if $size == laptop-screen {
+          @media (max-width: 991.98px) { @content; }
+        } @else if $size == desktop-up {
+          @media (max-width: 1200px) { @content; }
+        } @else if $size == desktop-screen {
+          @media (max-width: 1280.98px) { @content; }
+        } @else if $size == big-desktop-up {
+          @media (max-width: 1800px) { @content; }
+        }
+      }
