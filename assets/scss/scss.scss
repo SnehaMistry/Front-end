@@ -1,0 +1,12 @@
+/**
+* @title : Scss Dashboard
+* @author : Sneha Mistry
+*/
+
+//base css import
+@import "base/index";
+
+@import "vendor/bootstrap-base";
+@import "vendor/bootstrap-components";
+@import "component/index";
+@import "utilities/index";

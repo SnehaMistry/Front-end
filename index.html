@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/icons/style.css" />
+    <link rel="stylesheet" href="assets/css/scss.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- main section start -->
+    <main class="d-flex h-100 w-100 overflow-hidden">
+      <!-- <input type="checkbox" id="toggle"> -->
+      <!-- sidebar section start -->
+      <aside class="sidebar border-end h-100">
+        <div class="my-5 mx-4">
+          <span class="icon-games fs-3"></span>
+        </div>
+        <nav class="d-flex nav flex-column">
+          <a class="py-3 px-4 nav-link text-dark" href="#"
+            ><span class="icon-home3 fs-4 me-3"></span> Home</a
+          >
+          <a class="py-3 px-4 nav-link text-dark" href="#"
+            ><span class="icon-trophy fs-4 me-3"></span> Projects</a
+          >
+          <a class="py-3 px-4 nav-link text-dark" href="#"
+            ><span class="icon-library fs-4 me-3"></span> Billings</a
+          >
+          <a class="py-3 px-4 nav-link text-dark" href="#"
+            ><span class="icon-user fs-4 me-3"></span> Team Members</a
+          >
+          <a class="py-3 px-4 nav-link text-dark" href="#"
+            ><span class="icon-chart-bar-outline fs-4 me-3"></span> Stats</a
+          >
+          <a class="py-3 px-4 nav-link text-dark" href="#"
+            ><span class="icon-ci_settings-filled fs-4 me-3"></span> Settings</a
+          >
+        </nav>
+      </aside>
+      <!-- end sidebar section -->
+
+      <!--start content section  -->
+      <section class="d-flex flex-column p-5">
+        <!-- Searchbar -->
+        <div class="form-group position-relative">
+          <label for="serachbtn" id="search-icon"
+            ><i class="icon-search fs-5"></i
+          ></label>
+          <input
+            type="type"
+            id="serachbtn"
+            class="ps-5 col-md-10 py-2 border border-2 rounded-3"
+            placeholder="Search for stats"
+          />
+        </div>
+        <!-- end -->
+
+        <!-- Dashboard heading -->
+        <div class="d-flex justify-space-between w-100 my-3">
+          <div class="flex-grow-1">
+            <h1 class="mb-n1">Hello David</h1>
+            <span class="ms-1 text-secondary">Welcome Back !</span>
+          </div>
+          <div>
+            <button class="btn bg-transparent border border-2 rounded-3">
+              <span class="text-secondary">Filters</span
+              ><i class="icon-sliders"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Start dashboard overview -->
+        <div
+          class="card-wrapper d-flex flex-row flex-wrap bg-warning rounded px-5 py-4 my-4"
+        >
+          <!-- start card -->
+          <div class="card bg-transparent border-0" style="width: 10rem">
+            <div class="card-body">
+              <span><i class="icon-bi_eye-fill"></i></span>
+            </div>
+            <h5 class="card-title">Views</h5>
+            <span>500</span>
+            <small>Per day</small>
+          </div>
+          <div class="card bg-transparent border-0" style="width: 10rem">
+            <div class="card-body">
+              <span><i class="icon-compass2"></i></span>
+            </div>
+            <h5 class="card-title">Views</h5>
+            <span>2000</span>
+            <small>Per minutes</small>
+          </div>
+          <div class="card bg-transparent border-0" style="width: 10rem">
+            <div class="card-body">
+              <span><i class="icon-library"></i></span>
+            </div>
+            <h5 class="card-title">Views</h5>
+            <span>500</span>
+            <small>Per day</small>
+          </div>
+          <!-- end card -->
+        </div>
+
+        <div class="d-flex flex-column">
+          
+            <!-- start card -->
+            <div class="d-flex">
+            <div class="col-sm-6 p-3">
+              <div class="card bg-danger">
+                <div class="card-body">
+                  <span><i class="icon-bi_eye-fill"></i></span>
+                </div>
+                <h5 class="card-title">Views</h5>
+                <span>500</span>
+                <small>Per day</small>
+              </div>
+            </div>
+            <div class="col-sm-6 p-3">
+              <div class="card border bg-success">
+                <div class="card-body">
+                    <span><i class="icon-compass2"></i></span>
+                </div>
+                <h5 class="card-title">Views</h5>
+                <span>500</span>
+                <small>Per day</small>
+              </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="col-sm-6 p-3">
+            <div class="card bg-light">
+              <div class="card-body">
+                <span><i class="icon-library"></i></span>
+              </div>
+              <h5 class="card-title">Views</h5>
+              <span>500</span>
+              <small>Per day</small>
+            </div>
+        </div>
+        <div class="col-sm-6 p-3">
+            <div class="card bg-info border-transperant round-2">
+              <div class="card-body">
+                <span><i class="icon-library"></i></span>
+              </div>
+              <h5 class="card-title">Views</h5>
+              <span>500</span>
+              <small>Per day</small>
+            </div>
+        </div>
+        </div>
+            <!-- end card -->
+          
+        </div>
+        <!-- end overview section -->
+      </section>
+      <!-- end content section -->
+    </main>
+    <!-- end main section -->
+  </body>
+</html>
