@@ -14,146 +14,248 @@
     <main class="d-flex h-100 w-100 overflow-hidden">
       <!-- <input type="checkbox" id="toggle"> -->
       <!-- sidebar section start -->
-      <aside class="sidebar border-end h-100">
+      <aside class="border-end d-flex flex-column">
         <div class="my-5 mx-4">
           <span class="icon-games fs-3"></span>
         </div>
-        <nav class="d-flex nav flex-column">
-          <a class="py-3 px-4 nav-link text-dark" href="#"
+        <nav class="d-flex nav flex-column justify-content-between flex-grow-1 align-items-center">
+          <ul class="nav flex-column flex-grow-1">
+            <li class="nav-item">
+              <a class="py-3 px-4 nav-link text-dark" href="#"
             ><span class="icon-home3 fs-4 me-3"></span> Home</a
-          >
+          ></li>
+          <li class="nav-item">
           <a class="py-3 px-4 nav-link text-dark" href="#"
             ><span class="icon-trophy fs-4 me-3"></span> Projects</a
-          >
+          ></li>
+          <li class="nav-item">
           <a class="py-3 px-4 nav-link text-dark" href="#"
             ><span class="icon-library fs-4 me-3"></span> Billings</a
-          >
+          ></li>
+          <li class="nav-item">
           <a class="py-3 px-4 nav-link text-dark" href="#"
             ><span class="icon-user fs-4 me-3"></span> Team Members</a
-          >
+          ></li>
+          <li class="nav-item">
           <a class="py-3 px-4 nav-link text-dark" href="#"
             ><span class="icon-chart-bar-outline fs-4 me-3"></span> Stats</a
-          >
+          ></li>
+          <li class="nav-item">
           <a class="py-3 px-4 nav-link text-dark" href="#"
             ><span class="icon-ci_settings-filled fs-4 me-3"></span> Settings</a
-          >
+          ></li>
+        </ul>
+
+        <div class="mb-5">
+          <figure class="image-wrap border round-1 p-2 mx-auto my-3">
+            <img src="assets/images/3906412.png" alt="user images" id="user_image" class="round-1">
+          </figure>
+          <h3 class="fs-6">David Milan</h3>
+        </div>
         </nav>
       </aside>
       <!-- end sidebar section -->
 
       <!--start content section  -->
-      <section class="d-flex flex-column p-5">
-        <!-- Searchbar -->
-        <div class="form-group position-relative">
-          <label for="serachbtn" id="search-icon"
-            ><i class="icon-search fs-5"></i
-          ></label>
-          <input
-            type="type"
-            id="serachbtn"
-            class="ps-5 col-md-10 py-2 border border-2 rounded-3"
-            placeholder="Search for stats"
-          />
-        </div>
-        <!-- end -->
+      <section class="d-flex p-5 flex-grow-1">
+        <div class="flex-grow-1">
+          <!-- Searchbar -->
+          <div class="form-group position-relative">
+            <label for="serachbtn" id="search-icon"
+              ><i class="icon-search fs-5"></i
+            ></label>
+            <input
+              type="type"
+              id="serachbtn"
+              class="ps-5 col-md-10 py-2 border border-2 round-1"
+              placeholder="Search for stats"
+            />
+          </div>
+          <!-- end -->
 
-        <!-- Dashboard heading -->
-        <div class="d-flex justify-space-between w-100 my-3">
-          <div class="flex-grow-1">
-            <h1 class="mb-n1">Hello David</h1>
-            <span class="ms-1 text-secondary">Welcome Back !</span>
+          <!-- Dashboard heading -->
+          <div class="d-flex justify-space-between w-100 my-5">
+            <div class="flex-grow-1">
+              <h1 class="mb-n1">Hello David</h1>
+              <small class="ms-1 text-black-50">Welcome Back !</small>
+            </div>
+            <div>
+              <button class="btn bg-transparent border border-2 round-1">
+                <span class="text-secondary me-3">Filters</span
+                ><i class="icon-sliders"></i>
+              </button>
+            </div>
           </div>
-          <div>
-            <button class="btn bg-transparent border border-2 rounded-3">
-              <span class="text-secondary">Filters</span
-              ><i class="icon-sliders"></i>
-            </button>
-          </div>
-        </div>
 
-        <!-- Start dashboard overview -->
-        <div
-          class="card-wrapper d-flex flex-row flex-wrap bg-warning rounded px-5 py-4 my-4"
-        >
-          <!-- start card -->
-          <div class="card bg-transparent border-0" style="width: 10rem">
-            <div class="card-body">
-              <span><i class="icon-bi_eye-fill"></i></span>
+          <!-- Start dashboard overview -->
+          <div
+            class="card-wrapper d-flex flex-row flex-wrap bg-warning rounded py-4 my-4 px-4"
+          >
+            <!-- start card -->
+            <div class="card bg-transparent border-0 col-md-4">
+              <div class="card-body">
+                <div
+                  class="max-content-width bg-icon-bg rounded-circle card-icon"
+                >
+                  <div><i class="icon-bi_eye-fill"></i></div>
+                </div>
+                <div class="d-flex flex-column mt-3">
+                  <h5 class="card-title text-black-50">Views</h5>
+                  <span class="fs-2 fw-bolder">500</span>
+                  <small>Per day</small>
+                </div>
+              </div>
             </div>
-            <h5 class="card-title">Views</h5>
-            <span>500</span>
-            <small>Per day</small>
-          </div>
-          <div class="card bg-transparent border-0" style="width: 10rem">
-            <div class="card-body">
-              <span><i class="icon-compass2"></i></span>
+            <div class="card bg-transparent border-0 col-md-4">
+              <div class="card-body">
+                <div
+                  class="max-content-width bg-icon-bg rounded-circle card-icon"
+                >
+                  <div><i class="icon-compass2"></i></div>
+                </div>
+                <div class="d-flex flex-column mt-3">
+                  <h5 class="card-title text-black-50">Visits</h5>
+                  <span class="fs-2 fw-bolder">2000</span>
+                  <small>Per minutes</small>
+                </div>
+              </div>
             </div>
-            <h5 class="card-title">Views</h5>
-            <span>2000</span>
-            <small>Per minutes</small>
-          </div>
-          <div class="card bg-transparent border-0" style="width: 10rem">
-            <div class="card-body">
-              <span><i class="icon-library"></i></span>
+            <div class="card bg-transparent border-0 col-md-4">
+              <div class="card-body">
+                <div
+                  class="max-content-width bg-icon-bg rounded-circle card-icon"
+                >
+                  <div><i class="icon-library"></i></div>
+                </div>
+                <div class="d-flex flex-column mt-3">
+                  <h5 class="card-title text-black-50">Orders</h5>
+                  <span class="fs-2 fw-bolder">5100</span>
+                  <small>Per Day</small>
+                </div>
+              </div>
             </div>
-            <h5 class="card-title">Views</h5>
-            <span>500</span>
-            <small>Per day</small>
+            <!-- end card -->
           </div>
-          <!-- end card -->
-        </div>
-
-        <div class="d-flex flex-column">
-          
+          <!-- card with chart -->
+          <div class="d-flex flex-column">
             <!-- start card -->
             <div class="d-flex">
-            <div class="col-sm-6 p-3">
-              <div class="card bg-danger">
-                <div class="card-body">
-                  <span><i class="icon-bi_eye-fill"></i></span>
+              <div class="col-sm-6 p-4 ps-0">
+                <div class="card border-0 bg-danger p-2">
+                  <div class="d-flex card-body justify-content-between">
+                    <div class="d-flex flex-column">
+                      <h4 class="card-title">Sales</h4>
+                      <small>Total Sales Today</small>
+                      <span class="fs-3 fw-bolder">$500</span>
+                    </div>
+                    <div>
+                      <span><i class="icon-south_east"></i></span>
+                    </div>
+                  </div>
                 </div>
-                <h5 class="card-title">Views</h5>
-                <span>500</span>
-                <small>Per day</small>
               </div>
-            </div>
-            <div class="col-sm-6 p-3">
-              <div class="card border bg-success">
-                <div class="card-body">
-                    <span><i class="icon-compass2"></i></span>
+              <div class="col-sm-6 p-4 pe-0">
+                <div class="card border-0 bg-success p-2">
+                  <div class="d-flex card-body justify-content-between">
+                    <div class="d-flex flex-column">
+                      <h4 class="card-title">Profit</h4>
+                      <small>Per day Ratio</small>
+                      <span class="fs-3 fw-bolder">$150</span>
+                    </div>
+                    <div>
+                      <span><i class="icon-south_east"></i></span>
+                    </div>
+                  </div>
                 </div>
-                <h5 class="card-title">Views</h5>
-                <span>500</span>
-                <small>Per day</small>
               </div>
             </div>
-        </div>
-        <div class="d-flex">
-            <div class="col-sm-6 p-3">
-            <div class="card bg-light">
-              <div class="card-body">
-                <span><i class="icon-library"></i></span>
+            <div class="d-flex">
+              <div class="col-sm-6 p-4 ps-0">
+                <div class="card border-0 bg-light p-2">
+                  <div class="d-flex card-body justify-content-between">
+                    <div class="d-flex flex-column">
+                      <h4 class="card-title">Orders</h4>
+                      <small>Total Order Today</small>
+                      <span class="fs-3 fw-bolder">1000</span>
+                    </div>
+                    <div>
+                      <span><i class="icon-south_west"></i></span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h5 class="card-title">Views</h5>
-              <span>500</span>
-              <small>Per day</small>
-            </div>
-        </div>
-        <div class="col-sm-6 p-3">
-            <div class="card bg-info border-transperant round-2">
-              <div class="card-body">
-                <span><i class="icon-library"></i></span>
+              <div class="col-sm-6 p-4 pe-0">
+                <div class="card bg-info border-0 p-2">
+                  <div class="d-flex card-body justify-content-between">
+                    <div class="d-flex flex-column">
+                      <h4 class="card-title">Visits</h4>
+                      <small>Total Visits Today</small>
+                      <span class="fs-3 fw-bolder">400</span>
+                    </div>
+                    <div>
+                      <span><i class="icon-south_west rotate-90"></i></span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h5 class="card-title">Views</h5>
-              <span>500</span>
-              <small>Per day</small>
             </div>
-        </div>
-        </div>
             <!-- end card -->
-          
+          </div>
+          <!-- end overview section -->
         </div>
-        <!-- end overview section -->
+        <!-- start sales revenue section -->
+        <div class="d-flex flex-column ms-5">
+          <div class="bg-dark text-primary p-4 flex-grow-1 round-2">
+            <h4>Sales Revenue</h4>
+            <div class="card-wrapper">
+              <div class="card bg-transparent">
+                <div class="d-flex card-body justify-content-between">
+                  <div class="d-flex align-items-center me-4">
+                    <div class="max-content-width bg-primary rounded-circle card-icon"><i class="icon-bi_eye-fill text-dark fs-4"></i></div>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="fs-5 fw-bolder mb-1">230k</span>
+                    <small>Sales</small>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-transparent">
+                <div class="d-flex card-body justify-content-between">
+                  <div class="d-flex align-items-center me-4">
+                    <div class="max-content-width bg-primary rounded-circle card-icon"><i class="icon-bi_eye-fill text-dark fs-4"></i></div>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="fs-5 fw-bolder mb-1">8.549k</span>
+                    <small>Customer</small>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-transparent">
+                <div class="d-flex card-body justify-content-between">
+                  <div class="d-flex align-items-center me-4">
+                    <div class="max-content-width bg-primary rounded-circle card-icon"><i class="icon-bi_eye-fill text-dark fs-4"></i></div>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="fs-5 fw-bolder mb-1">1.423k</span>
+                    <small>Products</small>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-transparent">
+                <div class="d-flex card-body justify-content-between">
+                  <div class="d-flex align-items-center me-4">
+                    <div class="max-content-width bg-primary rounded-circle card-icon"><i class="icon-bi_eye-fill text-dark fs-4"></i></div>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="fs-5 fw-bolder mb-1">$9745</span>
+                    <small>Revenue</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end sales revenue -->
       </section>
       <!-- end content section -->
     </main>

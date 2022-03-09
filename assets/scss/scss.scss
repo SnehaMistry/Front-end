@@ -5,8 +5,9 @@
 
 //base css import
 @import "base/index";
+@import "component/index";
 
 @import "vendor/bootstrap-base";
 @import "vendor/bootstrap-components";
-@import "component/index";
+@import "layout/index";
 @import "utilities/index";

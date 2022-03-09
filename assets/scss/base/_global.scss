@@ -1,7 +1,18 @@
 .mb-n1{
     margin-bottom: -0.5rem;
 }
-
+.round-1{
+    border-radius: 0.8rem
+}
 .round-2{
     border-radius: 2rem;
+}
+.max-content-width{
+    max-width: max-content;
+}
+.card-icon{
+    padding: 0.8rem 1rem;
+}
+.rotate-90{
+    transform: rotate(90deg);
 }
