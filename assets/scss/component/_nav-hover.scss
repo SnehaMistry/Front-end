@@ -1,3 +1,8 @@
-.nav-item:hover{
-        border-left: $navlink-border;
+.nav-link{
+    border-left: $navlink-border solid transparent;
+    &:hover,
+    &:active
+     {
+        border-left: $navlink-border solid $dark;
+   }
 }

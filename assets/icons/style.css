@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?805qya');
-  src:  url('fonts/icomoon.eot?805qya#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?805qya') format('truetype'),
-    url('fonts/icomoon.woff?805qya') format('woff'),
-    url('fonts/icomoon.svg?805qya#icomoon') format('svg');
+  font-family: 'app';
+  src:  url('fonts/app.eot?san6zf');
+  src:  url('fonts/app.eot?san6zf#iefix') format('embedded-opentype'),
+    url('fonts/app.ttf?san6zf') format('truetype'),
+    url('fonts/app.woff?san6zf') format('woff'),
+    url('fonts/app.svg?san6zf#app') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,8 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
+  font-family: 'app' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,51 +24,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chart-bar-outline:before {
-  content: "\e900";
+.icon-filternew:before {
+  content: "\e911";
 }
-.icon-user:before {
-  content: "\e901";
+.icon-newbrand:before {
+  content: "\e912";
 }
-.icon-games:before {
-  content: "\e904";
+.icon-sticker:before {
+  content: "\e90e";
 }
-.icon-more_time:before {
-  content: "\e905";
+.icon-chart:before {
+  content: "\e90d";
 }
-.icon-south_east:before {
-  content: "\e906";
-}
-.icon-south_west:before {
-  content: "\e907";
-}
-.icon-trophy:before {
-  content: "\e908";
-}
-.icon-search:before {
-  content: "\f002";
-}
-.icon-sort:before {
-  content: "\f0dc";
-}
-.icon-unsorted:before {
-  content: "\f0dc";
-}
-.icon-sliders:before {
-  content: "\f1de";
-}
-.icon-bi_eye-fill:before {
-  content: "\e902";
-}
-.icon-ci_settings-filled:before {
-  content: "\e903";
-}
-.icon-home3:before {
+.icon-customer:before {
   content: "\e909";
 }
-.icon-library:before {
-  content: "\e921";
+.icon-shop-window:before {
+  content: "\e906";
 }
-.icon-compass2:before {
-  content: "\e94a";
+.icon-compass:before {
+  content: "\e907";
+}
+.icon-bank:before {
+  content: "\e905";
+}
+.icon-arrow:before {
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e900";
+}
+.icon-settings:before {
+  content: "\e901";
+}
+.icon-eye:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-dashboard:before {
+  content: "\e90b";
+}
+.icon-bar-chart:before {
+  content: "\e904";
+}
+.icon-trophy:before {
+  content: "\e99e";
 }
