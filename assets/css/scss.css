@@ -50,6 +50,30 @@
   border-left: 3px solid #020603;
 }
 
+.icon {
+  display: inline-block;
+}
+
+#toggle:checked + .sidebar {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+#toggle:checked + .sidebar .icon {
+  -webkit-transform: translateX(-34px);
+          transform: translateX(-34px);
+}
+
+#toggle:not(:checked) + .sidebar {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+#toggle:not(:checked) + .sidebar.icon {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
 .image-wrap {
   height: 60px;
   width: 60px;
@@ -7725,11 +7749,5 @@ fieldset:disabled .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
-}
-
-@media (min-width: 576px) {
-  section {
-    display: block;
-  }
 }
 /*# sourceMappingURL=scss.css.map */

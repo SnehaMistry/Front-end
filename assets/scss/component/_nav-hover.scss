@@ -6,3 +6,26 @@
         border-left: $navlink-border solid $dark;
    }
 }
+.icon{
+   display: inline-block;
+}
+
+#toggle:checked +.sidebar{
+
+   transform: translateX(-200px);
+
+   .icon{
+      transform: translateX(-34px);
+   }
+
+}
+
+#toggle:not(:checked) +.sidebar{
+
+   transform: translateX(0px);
+
+   &.icon{
+      transform: translateX(15px);
+   }
+
+}
