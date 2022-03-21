@@ -12,13 +12,14 @@
   <body>
     <!-- main section start -->
     <main class="d-flex h-100 w-100 overflow-hidden">
-      <!-- <input type="checkbox" id="toggle"> -->
+      <input type="checkbox" id="toggle" class="d-none">
       <!-- sidebar section start -->
-      <input type="checkbox" id="toggle" />
+      
       <aside class="sidebar border-end d-flex flex-column">
+        
         <div class="my-5 mx-4">
-          <lable class="icon-newbrand fs-3" for="toggle"></label>
-        </div>
+         <label for="toggle" class="fs-4 brand-icon"><i class="icon-newbrand"></i></label>
+        </div> 
         <nav class="d-flex nav flex-column justify-content-between flex-grow-1 align-items-center">
           <ul class="nav flex-column flex-grow-1 w-100">
             <li class="nav-item active">
@@ -27,27 +28,27 @@
           ></li>
           <li class="nav-item">
           <a class="mb-3 nav-link text-dark" href="#"
-            ><span class="icon-trophy fs-5 me-3"></span> Projects</a
+            ><span class="icon-trophy icon fs-5 me-3"></span> Projects</a
           ></li>
           <li class="nav-item">
           <a class="mb-3 nav-link text-dark" href="#"
-            ><span class="icon-bank fs-5 me-3"></span> Billings</a
+            ><span class="icon-bank icon fs-5 me-3"></span> Billings</a
           ></li>
           <li class="nav-item">
           <a class="mb-3 nav-link text-dark" href="#"
-            ><span class="icon-user fs-5 me-3"></span> Team Members</a
+            ><span class="icon-user icon fs-5 me-3"></span> Team Members</a
           ></li>
           <li class="nav-item">
           <a class="mb-3 nav-link text-dark" href="#"
-            ><span class="icon-bar-chart fs-5 me-3"></span> Stats</a
+            ><span class="icon-bar-chart icon fs-5 me-3"></span> Stats</a
           ></li>
           <li class="nav-item">
           <a class="mb-3 nav-link text-dark" href="#"
-            ><span class="icon-settings fs-5 me-3"></span> Settings</a
+            ><span class="icon-settings icon fs-5 me-3"></span> Settings</a
           ></li>
         </ul>
 
-        <div class="mb-5">
+        <div class="mb-5 user-info">
           <figure class="image-wrap border round-1 p-2 mx-auto my-3">
             <img src="assets/images/3906412.png" alt="user images" id="user_image" class="round-1">
           </figure>
@@ -58,7 +59,7 @@
       <!-- end sidebar section -->
 
       <!--start content section  -->
-      <section class="d-flex flex-column flex-lg-row p-5 flex-grow-1">
+      <section class="d-flex flex-column flex-lg-row p-md-5 p-2 flex-grow-1">
         <div class="flex-grow-1">
           <!-- Searchbar -->
           <div class="form-group position-relative">
@@ -90,7 +91,7 @@
 
           <!-- Start dashboard overview -->
           <div
-            class="card-wrapper d-flex flex-row flex-wrap bg-warning rounded py-4 my-4 px-4"
+            class="card-wrapper d-flex flex-row flex-wrap bg-warning rounded py-md-4 my-md-4 px-4"
           >
             <!-- start card -->
             <div class="card bg-transparent border-0 col-12 col-md-4">
@@ -129,8 +130,8 @@
           <!-- card with chart -->
           <div class="d-flex flex-column">
             <!-- start card -->
-            <div class="d-flex">
-              <div class="col-12 col-sm-6 p-4 ps-0">
+            <div class="d-flex flex-wrap">
+              <div class="col-12 col-sm-6 p-4 ps-md-0">
                 <div class="card border-0 bg-danger p-2">
                   <div class="d-flex card-body justify-content-between">
                     <div class="d-flex flex-column">
@@ -144,7 +145,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 p-4 pe-0">
+              <div class="col-12 col-sm-6 p-4 pe-md-0">
                 <div class="card border-0 bg-success p-2">
                   <div class="d-flex card-body justify-content-between">
                     <div class="d-flex flex-column">
@@ -158,9 +159,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="d-flex">
-              <div class="col-12 col-sm-6 p-4 ps-0">
+              <div class="col-12 col-sm-6 p-4 ps-md-0">
                 <div class="card border-0 bg-light p-2">
                   <div class="d-flex card-body justify-content-between">
                     <div class="d-flex flex-column">
@@ -174,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 p-4 pe-0">
+              <div class="col-12 col-sm-6 p-4 pe-md-0">
                 <div class="card bg-info border-0 p-2">
                   <div class="d-flex card-body justify-content-between">
                     <div class="d-flex flex-column">
@@ -194,7 +193,7 @@
           <!-- end overview section -->
         </div>
         <!-- start sales revenue section -->
-        <div class="second-sidebar d-flex flex-column ms-5">
+        <div class="second-sidebar d-flex flex-column ms-lg-5">
           <div class="bg-dark text-primary p-4 flex-grow-1 round-2">
             <h4>Sales Revenue</h4>
             <div class="card-wrapper">

@@ -30,7 +30,7 @@
           transform: rotate(90deg);
 }
 
-.sidebar, .second-sidebar {
+.second-sidebar {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 260px;
           flex: 0 0 260px;
@@ -40,6 +40,16 @@
   position: absolute;
   top: 10px;
   left: 15px;
+}
+
+.sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-link {
@@ -55,23 +65,29 @@
 }
 
 #toggle:checked + .sidebar {
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+#toggle:checked + .sidebar .brand-icon {
+  -webkit-transform: translateX(-12px);
+          transform: translateX(-12px);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 #toggle:checked + .sidebar .icon {
-  -webkit-transform: translateX(-34px);
-          transform: translateX(-34px);
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
-#toggle:not(:checked) + .sidebar {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-#toggle:not(:checked) + .sidebar.icon {
-  -webkit-transform: translateX(15px);
-          transform: translateX(15px);
+#toggle:checked + .sidebar .user-info {
+  display: none;
 }
 
 .image-wrap {

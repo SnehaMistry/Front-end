@@ -1,3 +1,10 @@
+.sidebar{
+   flex: 0 0 $sidebar-width;
+   overflow: hidden;
+   white-space: nowrap;
+   transition: all $transition ease-in-out;
+}
+
 .nav-link{
     border-left: $navlink-border solid transparent;
     &:hover,
@@ -12,20 +19,20 @@
 
 #toggle:checked +.sidebar{
 
-   transform: translateX(-200px);
-
-   .icon{
-      transform: translateX(-34px);
+   flex: 0 0 50px;
+   transition: all $transition ease-in;
+   .brand-icon{
+      transform: translateX(-12px);
+      transition: all $transition ease-in;
    }
 
-}
+   .icon{
+      transform: translateX(-18px);
+      transition: all $transition ease-in;
+   }
 
-#toggle:not(:checked) +.sidebar{
-
-   transform: translateX(0px);
-
-   &.icon{
-      transform: translateX(15px);
+   .user-info{
+      display: none;
    }
 
 }
